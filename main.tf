@@ -6,10 +6,11 @@ provider "aws" {
 
 
 module "eks" {
- source = "../eks"
- env    =  "dev"
- desired_size  ="2"
- max_size      = "4"
- min_size      = "2"
- instance_type = ["t3.medium"]
+  source = "../eks"
+  env    =  "dev"
+  desired_size  = "2"
+  max_size      = "4"
+  min_size      = "2"
+  instance_types= ["t3.medium"]
+
 }
